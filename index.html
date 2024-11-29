@@ -351,7 +351,9 @@
                 <h3>Gás de 13kg</h3>
                 <p>Preço: R$ 96,99<p>
                 <p>Ideal para sua casa, com qualidade garantida.</p>
-                <button onclick="confirmPurchase('Gás de 13kg', 'R$ 96,99')">Comprar via WhatsApp</button>
+                <button onclick="exibirPix()">Comprar no site</button>
+            <button onclick="redirecionarWhatsApp()">Finalizar no WhatsApp</button>
+            </div>
             </div>
 
             <!-- Produto Gás 45kg -->
@@ -427,7 +429,7 @@
 
             if (confirmacao) {
                 // Redireciona para o WhatsApp com a mensagem personalizada
-                window.open(`https://wa.me/5513955446352?text=${encodeURIComponent(mensagem)}`, '_blank');
+                window.open(`https://wa.me/5513955446353?text=${encodeURIComponent(mensagem)}`, '_blank');
             }
         }
 
